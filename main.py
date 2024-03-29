@@ -41,7 +41,7 @@ class layer:
         if activation == "sigmoid" : return sigmoid(output)
         if activation == "relu" : return relu(output)
         else: 
-            print(f"\033[93m\033[1mError:\033[0m\033[93m activation function, '{activation}' is not found.\nnetwork will fail to give correct output\033[0m")
+            print(f"\033[93m\033[1mWarning!\033[0m\033[93m activation function, '{activation}' is not found.\nnetwork will fail to give correct output\033[0m")
             return sigmoid(output)
 
 inputLayer = layer(2, input=True)
